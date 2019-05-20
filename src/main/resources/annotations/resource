@@ -1,0 +1,9 @@
+When have the annotation @RestController, automatically you have the annotations @RequestBody and @Controller
+
+If you have an empty list, has to return code 200 with an empty list
+
+When you create an resource, you have to return the header "Location" of where you can find this resource created,
+also it's a good practice to return the resource
+
+Use @RequestBody for an json received from the client, and Spring will bind it to an object
+Use @PathVariable for an URI variable

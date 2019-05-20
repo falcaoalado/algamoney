@@ -1,0 +1,2 @@
+When extends the interface JpaRepository<Class, TypeOfId>, you already have an CRUD ready, only need to autowire
+your interface, since Spring implements that.
