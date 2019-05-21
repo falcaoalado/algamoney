@@ -7,3 +7,9 @@ also it's a good practice to return the resource
 
 Use @RequestBody for an json received from the client, and Spring will bind it to an object
 Use @PathVariable for an URI variable
+
+ServletUriComponentsBuilder can create an URI, for example:
+ServletUriComponentsBuilder.fromCurrentRequestUri()
+						   .path("/{codigo}")
+			   			   .buildAndExpand(save.getId())
+			   			   .toUri();
