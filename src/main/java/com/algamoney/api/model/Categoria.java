@@ -16,8 +16,8 @@ public class Categoria {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
-	@NotNull
-	@Size(min = 2, max = 20)
+	@NotNull(message = "Nome {validate.required.field}")
+	@Size(message = "Nome {validate.size.field}", min = 2, max = 20)
 	private String nome;
 
 	public Long getId() {
